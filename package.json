@@ -23,23 +23,32 @@
   "dependencies": {
     "@electron-toolkit/preload": "^3.0.1",
     "@electron-toolkit/utils": "^4.0.0",
-    "electron-updater": "^6.3.9"
+    "@vueuse/core": "^12.7.0",
+    "electron-updater": "^6.3.9",
+    "sass": "^1.85.1"
   },
   "devDependencies": {
-    "@electron-toolkit/eslint-config-prettier": "3.0.0",
-    "@electron-toolkit/eslint-config-ts": "^3.0.0",
+    "@antfu/eslint-config": "^4.4.0",
     "@electron-toolkit/tsconfig": "^1.0.1",
-    "@types/node": "^22.13.4",
+    "@tailwindcss/typography": "^0.5.16",
+    "@tailwindcss/vite": "^4.0.9",
+    "@types/node": "^22.13.9",
     "@vitejs/plugin-vue": "^5.2.1",
-    "electron": "^34.2.0",
+    "electron": "^35.0.0",
     "electron-builder": "^25.1.8",
     "electron-vite": "^3.0.0",
-    "eslint": "^9.20.1",
-    "eslint-plugin-vue": "^9.32.0",
-    "prettier": "^3.5.1",
-    "typescript": "^5.7.3",
-    "vite": "^6.1.0",
+    "eslint": "^9.21.0",
+    "prettier": "^3.5.3",
+    "tailwindcss": "^4.0.9",
+    "typescript": "^5.8.2",
+    "unplugin-auto-import": "^19.1.1",
+    "unplugin-vue-components": "^28.4.1",
+    "unplugin-vue-router": "^0.11.2",
+    "vite": "^6.2.0",
+    "vite-plugin-vue-meta-layouts": "^0.5.1",
+    "vite-plugin-vuetify": "^2.1.0",
     "vue": "^3.5.13",
-    "vue-tsc": "^2.2.2"
+    "vue-tsc": "^2.2.8",
+    "vuetify": "^3.7.14"
   }
 }
