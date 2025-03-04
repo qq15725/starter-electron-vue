@@ -36,11 +36,23 @@ export default defineConfig({
           { vuetify: ['useTheme', 'useRtl', 'useLocale', 'useDisplay', 'useLayout'] },
         ],
         dts: resolve('src/renderer/src/auto-imports.d.ts'),
-        dirs: ['src/stores'],
+        dirs: [
+          resolve('src/renderer/src/stores'),
+        ],
       }),
-      components({ dts: resolve('src/renderer/src/components.d.ts'), types: [] }),
-      vueRouter({ importMode: 'sync', dts: resolve('src/renderer/src/typed-router.d.ts') }),
-      layouts(),
+      components({
+        dirs: resolve('src/renderer/src/components'),
+        dts: resolve('src/renderer/src/components.d.ts'),
+        types: [],
+      }),
+      vueRouter({
+        routesFolder: resolve('src/renderer/src/pages'),
+        importMode: 'sync',
+        dts: resolve('src/renderer/src/typed-router.d.ts'),
+      }),
+      layouts({
+        target: resolve('src/renderer/src/layouts'),
+      }),
     ],
   },
 })
